@@ -1,0 +1,246 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 1rem;
+}
+
+body {
+  font-family: Verdana, sans-serif;
+}
+
+.top-menu {
+  background-color: #fff;
+  display: flex;
+  padding: 0.7rem 1rem;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  box-shadow: 0 0 8px gray;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.two-first-letter-in-menu {
+  font-weight: bolder;
+}
+
+.link-in-top-menu {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-family: "Segoe UI", sans-serif;
+  text-decoration: none;
+  letter-spacing: 0.25rem;
+  color: #000;
+}
+
+.link-in-top-menu:first-child {
+  margin-right: auto;
+}
+
+.link-in-top-menu:hover {
+  background-color: lightgray;
+}
+
+.block-header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+}
+
+.img-header {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.h1-header {
+  position: absolute;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 2.25rem;
+  letter-spacing: 0.25rem;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  margin: 0.625rem 0;
+}
+
+.two-letter-h1-header {
+  background-color: #000;
+  padding: 0.5rem 1rem;
+  font-weight: bolder;
+  opacity: 0.75;
+}
+
+.main-section {
+  max-width: 1500px;
+  padding: 0 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.h2-main {
+  display: block;
+  padding: 2rem 0;
+  padding-top: 4rem;
+  border-bottom: 1px lightgray solid;
+  font-size: 1.5rem;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.section-with-photos {
+  padding-top: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section-photo {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 20%;
+  flex-grow: 1;
+  margin: 0.5rem 1rem;
+}
+
+.text-with-photo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 0.9375rem;
+  padding: 0.5rem 1rem;
+  background-color: #000;
+  color: #fff;
+}
+
+.p-main {
+  padding: 1rem 0;
+  line-height: 1.5rem;
+  font-size: 0.9375rem;
+}
+
+.all-user-card {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+}
+
+.user-card {
+  position: relative;
+  margin-top: 1.5rem;
+  margin-right: 15px;
+  line-height: 1.4;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  width: 23%;
+}
+
+.photo-user-card {
+  filter: grayscale(80%);
+  max-width: inherit;
+}
+
+.name-surname-user {
+  font-family: "Segoe UI", sans-serif;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  padding: 0.625rem 0;
+}
+
+.profession-user {
+  font-size: 0.9375rem;
+  padding: 0.625rem 0;
+  opacity: 0.6;
+}
+
+.brief-description-user {
+  padding: 0.5rem 0;
+}
+
+.contact-user-button {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  font-size: 0.9375rem;
+  border: none;
+}
+
+.contact-user-button:hover {
+  background-color: lightgrey;
+}
+
+.input-in-forms {
+  display: flex;
+  width: 100%;
+  opacity: 0.7;
+  font-size: 1rem;
+  padding: 0.5rem 0.5rem;
+  margin: 0.625rem 0;
+}
+
+.send-message-button {
+  background-color: #000;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  margin: 1.5rem 0 2.5rem;
+  font-size: 0.9375rem;
+}
+
+.img-location-in-map {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.footer-bottom-line {
+  background-color: #000;
+  color: #fff;
+  position: relative;
+  width: 100%;
+  padding: 2rem 0;
+  margin-top: 0.3125rem;
+  text-align: center;
+  font-size: 0.9375rem;
+}
+
+.link-in-footer {
+  color: inherit;
+}
+
+.link-in-footer:hover {
+  color: green;
+}
+
+@media screen and (max-width: 993px) {
+  .user-card {
+    width: 40%;
+  }
+
+  .section-photo {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .top-menu a + a {
+    display: none;
+  }
+
+  .architects-in-header {
+    display: none;
+  }
+
+  .section-photo {
+    width: 100%;
+  }
+
+  .user-card {
+    width: 100%;
+  }
+}
