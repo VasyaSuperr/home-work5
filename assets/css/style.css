@@ -103,15 +103,15 @@ body {
   display: flex;
   flex-direction: column;
   position: relative;
-  width: 20%;
+  width: 25%;
   flex-grow: 1;
-  margin: 0.5rem 1rem;
+  padding: 0.5rem 1rem;
 }
 
 .text-with-photo {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 0.5rem;
+  left: 1rem;
   font-size: 0.9375rem;
   padding: 0.5rem 1rem;
   background-color: #000;
@@ -133,12 +133,12 @@ body {
 .user-card {
   position: relative;
   margin-top: 1.5rem;
-  margin-right: 15px;
+  padding: 15px;
   line-height: 1.4;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  width: 23%;
+  width: 25%;
 }
 
 .photo-user-card {
@@ -219,21 +219,23 @@ body {
 
 @media screen and (max-width: 993px) {
   .user-card {
-    width: 40%;
+    width: 50%;
   }
 
   .section-photo {
-    width: 40%;
+    width: 50%;
   }
 }
 
 @media screen and (max-width: 600px) {
   .top-menu a + a {
-    display: none;
+    font-size: 0;
+    padding: 0;
   }
 
   .architects-in-header {
-    display: none;
+    font-size: 0;
+    padding: 0;
   }
 
   .section-photo {
